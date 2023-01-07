@@ -1,6 +1,6 @@
 # Import dependencies
 import pandas as pd
-import streamlit as st 
+import streamlit as st
 
 # Try to increase width of layout
 st.set_page_config(layout="wide")
@@ -18,13 +18,17 @@ df = pd.read_excel('combined_newbees_draft.xlsx')
 
 # Create header and subheader
 st.title('Sortable Newbees Drafts: 2013-2020')
-st.subheader('Use the dropdowns on the left to sort through different teams or years.')
+st.subheader(
+    'Use the dropdowns on the left to sort through different teams or years.')
 
 # Diplay the default dataframe.
 st.dataframe(df, use_container_width=True)
 
+# Add radio button to choose between All or Individual
+st.radio('All Newbees or Individual Team', ("All Newbees", "Individual Team"))
+
 options = df['year'].drop_duplicates()
-selected_options = st.sidebar.selectbox('Which year do you want?',options)
+selected_options = st.sidebar.selectbox('Which year do you want?', options)
 st.write(selected_options)
 filtered_df = df[df['year'] == selected_options]
 
@@ -34,8 +38,6 @@ filtered_df = df[df['year'] == selected_options]
 
 st.dataframe(filtered_df)
 # st.dataframe(filtered_df2)
-
-
 
 
 st.write('Where did you go wrong?')
