@@ -25,7 +25,8 @@ st.subheader(
 st.dataframe(df, use_container_width=True)
 
 # Add radio button to choose between All or Individual
-st.radio('All Newbees or Individual Team', ("All Newbees", "Individual Team"))
+st.sidebar.radio('All Newbees or Individual Team',
+                 ("All Newbees", "Individual Team"))
 
 options = df['year'].drop_duplicates()
 selected_options = st.sidebar.selectbox('Which year do you want?', options)
