@@ -66,9 +66,10 @@ def page2():
     st.markdown("# Page 2 ❄️")
     st.sidebar.markdown("# Page 2 ❄️")
 
+
 page_names_to_funcs = {
     "Main Page": main_page,
-    "Page 2": page2
+    "Heat Map": page2
 }
 
 selected_page = st.sidebar.selectbox(
