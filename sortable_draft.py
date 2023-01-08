@@ -69,7 +69,7 @@ def page2():
 
 page_names_to_funcs = {
     "Main Page": main_page,
-    "Heat Map": page2
+    "Page 2": page2
 }
 
 selected_page = st.sidebar.selectbox(
