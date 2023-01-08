@@ -14,7 +14,7 @@ components.html(
     
     
     """,
-    width=203
+    width=179
 )
 # Load df from excel
 df = pd.read_excel('combined_newbees_draft.xlsx')
