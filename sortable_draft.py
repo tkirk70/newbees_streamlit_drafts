@@ -1,10 +1,19 @@
 # Import dependencies
 import pandas as pd
 import streamlit as st
+import streamlit.components.v1 as components
 
 # Try to increase width of layout
 st.set_page_config(layout="wide")
 
+# Create imgage variable for league logo
+components.html(
+    """
+    
+    <img class="NavSecondary__Logo__Img imageLoaded " src="https://g.espncdn.com/lm-static/ffl/images/ffl-shield-shield.svg" alt="Fantasy Football Home">
+    
+    """
+)
 # Load df from excel
 df = pd.read_excel('combined_newbees_draft.xlsx')
 # # Filter by year
