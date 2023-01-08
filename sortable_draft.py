@@ -60,3 +60,17 @@ st.write('Where did you go wrong?')
 
 components.iframe(
     "https://g.espncdn.com/lm-static/ffl/images/ffl-shield-shield.svg")
+
+
+def page2():
+    st.markdown("# Page 2 ❄️")
+    st.sidebar.markdown("# Page 2 ❄️")
+
+page_names_to_funcs = {
+    "Main Page": main_page,
+    "Page 2": page2
+}
+
+selected_page = st.sidebar.selectbox(
+    "Select a page", page_names_to_funcs.keys())
+page_names_to_funcs[selected_page]()
