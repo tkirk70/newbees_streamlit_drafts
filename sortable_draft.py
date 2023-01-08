@@ -34,8 +34,8 @@ selected_options = st.sidebar.selectbox(
     'Which year do you want relive?', options)
 selected_options2 = st.sidebar.selectbox('Which round do you want?', options2)
 st.write('Year: ', selected_options, 'Round: ', selected_options2)
-filtered_df = df[df['year'] == selected_options &
-                 df['round'] == selected_options2]
+filtered_df = df[(df['year'] == selected_options) &
+                 (df['round'] == selected_options2)]
 
 # team_options = df['newbees_team'].unique().tolist()
 # selected_teams = st.sidebar.selectbox('Which team do you want?',team_options)
