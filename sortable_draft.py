@@ -12,7 +12,9 @@ components.html(
     
     <img class="NavSecondary__Logo__Img imageLoaded " src="https://g.espncdn.com/lm-static/ffl/images/ffl-shield-shield.svg" alt="Fantasy Football Home">
     
-    """
+    
+    """,
+    width=100
 )
 # Load df from excel
 df = pd.read_excel('combined_newbees_draft.xlsx')
