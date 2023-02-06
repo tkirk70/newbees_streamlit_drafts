@@ -29,4 +29,4 @@ df.set_index(['Week'], inplace=True)
 df_heat = df.style.background_gradient(cmap='viridis')\
     .set_properties(**{'font-size': '11px'}).format(precision=2)
 
-st.dataframe(df_heat)
+st.dataframe(df_heat, use_container_width=True)
