@@ -6,6 +6,7 @@ import streamlit as st
 pd.set_option('display.float_format','{:.2f}'.format)
 
 st.markdown("# Heat Maps under construction 🔥")
+st.markdown("## Weekly Newbees Scoring - 2021")
 st.sidebar.markdown("# Heat Maps 🔥")
 
 # figure out how to make this df without excel.
