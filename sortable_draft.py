@@ -2,6 +2,8 @@
 import pandas as pd
 import streamlit as st
 import streamlit.components.v1 as components
+import matplotlib
+from matplotlib import pyplot as plt
 
 # Try to increase width of layout
 st.set_page_config(layout="wide")
