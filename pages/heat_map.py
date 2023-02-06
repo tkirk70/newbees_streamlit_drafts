@@ -27,6 +27,6 @@ df.set_index(['Week'], inplace=True)
 # displaying dataframe as an heatmap
 # with diverging colourmap as virdis
 df_heat = df.style.background_gradient(cmap='viridis')\
-    .set_properties(**{'font-size': '11px'})
+    .set_properties(**{'font-size': '11px'}).format(precision=2)
 
 st.dataframe(df_heat)
