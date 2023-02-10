@@ -2,6 +2,9 @@
 import pandas as pd
 import streamlit as st
 
+# Set the page wide
+st.set_page_config(layout="wide")
+
 # format precision for floats
 pd.set_option('display.float_format','{:.2f}'.format)
 
