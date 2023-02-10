@@ -54,7 +54,7 @@ sns.heatmap(df, cmap='viridis', annot=True, fmt='.1f', linewidth=.7) #.set(title
 # plt.xticks(rotation=45)
 # sns.color_palette("viridis", as_cmap=True)
 ax.xaxis.tick_top()
-ax.set_title("Newbee's 2021 Weekly Scores", fontsize=17, pad=40)
+# ax.set_title("Newbee's 2021 Weekly Scores", fontsize=17, pad=40)
 plt.show()
 
 # How to show this in streamlit?
