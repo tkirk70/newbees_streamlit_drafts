@@ -42,7 +42,7 @@ import seaborn as sns
 df = pd.read_excel('season_2021.xlsx')
 df = df.set_index('Week')
 
-fig, ax = plt.subplots(figsize=(16,8))
+fig, ax = plt.subplots(figsize=(19,11))
 sns.set()
 sns.heatmap(df, cmap='viridis', annot=True, fmt='.1f', linewidth=.7) #.set(title="Newbee's 2021 Weekly Scores")
 # plt.xticks(rotation=45)
