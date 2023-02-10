@@ -35,8 +35,11 @@ st.set_page_config(layout="wide")
 
 # st.dataframe(df_heat, use_container_width=True)
 
-st.markdown("# Seaborn Heat Maps under construction 🔥")
-st.markdown("## Weekly Newbees Scoring - 2021")
+# st.markdown("# Seaborn Heat Maps under construction 🔥")
+# st.markdown("## Weekly Newbees Scoring - 2021")
+
+st.markdown("<h1 style='text-align: center;'>Seaborn Heat Maps under construction 🔥</h1>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center;'>Weekly Newbees Scoring - 2021</h1>", unsafe_allow_html=True)
 
 import matplotlib.pyplot as plt
 from pandas import DataFrame
